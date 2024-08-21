@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bell-inputs">
+            <label for="first-bell">First bell:</label>
+            <input type="text" id="first-bell" placeholder="mm:ss">
+            <br>
+            <label for="second-bell">Second bell:</label>
+            <input type="text" id="second-bell" placeholder="mm:ss">
+            <br>
+            <label for="third-bell">Third bell:</label>
+            <input type="text" id="third-bell" placeholder="mm:ss">
+        </div>
+
+        <div class="timer-display">
+            00 : 00
+        </div>
+        <div class="buttons">
+            <button id="start-timer">Start</button>
+            <button id="pause-timer">Pause</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<audio id="first-bell-sound" src="mixkit-bike-notification-bell-590.wav" preload="auto"></audio>
+<audio id="second-bell-sound" src="double_bell.wav" preload="auto"></audio>
+<audio id="third-bell-sound" src="mixkit-notification-bell-592.wav" preload="auto"></audio>
+</html>
